@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    active: #spring.profiles.active#
+  jackson:
+    time-zone: GMT+8
+    serialization:
+      write-dates-as-timestamps: true
+  jpa:
+    open-in-view: false
+  liquibase:
+    change-log: classpath:/liquibase/master.xml
+  thymeleaf:
+    cache: false
+    mode: HTML
+    check-template: false
+
+server:
+  tomcat:
+    uri-encoding: UTF-8
