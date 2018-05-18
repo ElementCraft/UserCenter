@@ -13,10 +13,10 @@ spring:
         livereload:
             enabled: false
     datasource:
-        type: com.zaxxer.hikari.HikariDataSource
-        url: jdbc:mysql://119.23.149.25:3306/nooblog-webflux?useUnicode=true&characterEncoding=utf8&useSSL=false
+        #type: com.zaxxer.hikari.HikariDataSource
+        url: jdbc:mysql://123.57.77.200:3306/blog?useUnicode=true&characterEncoding=utf8&useSSL=false
         username: root
-        password: Daedalus@130
+        password: noob@523#715
         hikari:
             minimum-idle: 5
             maximum-pool-size: 15
@@ -34,12 +34,6 @@ spring:
             hibernate.cache.use_second_level_cache: false
             hibernate.cache.use_query_cache: false
             hibernate.generate_statistics: false
-
-redis:
-    host: 119.23.149.25
-    password: daedalus
-    database: 3
-
 
 server:
     port: 8081
