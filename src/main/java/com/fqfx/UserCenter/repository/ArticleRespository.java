@@ -8,4 +8,5 @@ import java.util.List;
 public interface ArticleRespository extends JpaRepository<Article, Long> {
 
     List<Article> findAllByFlag(Integer flag);
+    List<Article> findAllByFlagAndTitleIsLike(Integer flag, String keyword);
 }
