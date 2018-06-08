@@ -6,7 +6,11 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
          http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
 
-    <!--<include file="classpath:/liquibase/changelog/2018040603510001-Role.xml"/>-->
+    <include file="classpath:/liquibase/changelog/201804062305-SystemConfig.xml"/>
+    <include file="classpath:/liquibase/changelog/201804070152-User.xml"/>
+    <include file="classpath:/liquibase/changelog/201806081543-Role.xml"/>
+    <include file="classpath:/liquibase/changelog/201806081544-UserRole.xml"/>
+
 
 
 </databaseChangeLog>

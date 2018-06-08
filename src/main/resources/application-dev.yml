@@ -13,10 +13,10 @@ spring:
         livereload:
             enabled: false
     datasource:
-        #type: com.zaxxer.hikari.HikariDataSource
-        url: jdbc:mysql://123.57.77.200:3306/blog?useUnicode=true&characterEncoding=utf8&useSSL=false
+        type: com.zaxxer.hikari.HikariDataSource
+        url: jdbc:mysql://119.23.149.25:3306/user_center?useUnicode=true&characterEncoding=utf8&useSSL=false
         username: root
-        password: noob@523#715
+        password: Daedalus@130
         hikari:
             minimum-idle: 5
             maximum-pool-size: 15

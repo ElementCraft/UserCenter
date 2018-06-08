@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="201804060400" author="ElementCraft">
+        <createTable tableName="role">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="varchar(32)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="gmt_create" type="datetime" defaultValueDate="now()"/>
+            <column name="gmt_modified" type="datetime" defaultValueDate="now()"/>
+            <column name="version" type="int" defaultValue="0"/>
+            <column name="is_deleted" type="int" defaultValue="0"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="201804060425" author="ElementCraft">
+        <addColumn tableName="role">
+            <column name="code" type="varchar(32)" afterColumn="id"/>
+        </addColumn>
+    </changeSet>
+
+</databaseChangeLog>

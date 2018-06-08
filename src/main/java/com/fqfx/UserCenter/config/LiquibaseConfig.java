@@ -15,7 +15,7 @@ public class LiquibaseConfig {
         liquibase.setDataSource(dataSource);
         liquibase.setChangeLog("classpath:liquibase/master.xml");
         //liquibase.setContexts("development,test,production");
-        liquibase.setShouldRun(false);
+        liquibase.setShouldRun(true);
         return liquibase;
     }
 

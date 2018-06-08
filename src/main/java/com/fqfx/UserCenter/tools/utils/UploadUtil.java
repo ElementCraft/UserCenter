@@ -18,7 +18,6 @@ import java.util.Optional;
 import java.util.concurrent.atomic.AtomicInteger;
 
 @Slf4j
-@Deprecated
 public class UploadUtil {
     private final static String DEFAULT_SAVE_PATH = "uploads" + File.separator;
     private final static Long DEFAULT_MIN_SIZE = 0L;
